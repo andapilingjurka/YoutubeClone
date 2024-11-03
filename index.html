@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <meta name="description" content="Homework 4, YouTube Clone">
+    <meta name="keywords" content="YouTube">
+    <meta name="author" content="Anda.P">
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/style.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="logo">
+        </div>
+        
+        <div class="navbar-center">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+            <i class="fas fa-microphone microphone-icon"></i> 
+        </div>
+        
+        
+        <div class="navbar-right">
+            <i class="fas fa-video video-icon"></i>
+            <i class="fas fa-bell bell-icon"></i>
+            <i class="fas fa-user-circle user-icon user"></i>
+        </div>
+    </div>
+
+    
+    <div class="sidebar open" id="sidebar">
+        <a href="index.html" class="menu-item home">
+            <i class="fas fa-home"></i>
+            <span class="menu-text">Home</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas fa-compass"></i>
+            <span class="menu-text">Shorts</span>
+        </a>
+        <a href="#" class="menu-item">
+            <i class="fas fa-play"></i>
+            <span class="menu-text">Subscriptions</span>
+        </a>
+        <hr class="line">
+        <p class="text-side">You <i class="fas fa-angle-right right"></i></p>
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-history"></i>
+            <span class="menu-text">History</span>
+        </a>
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-list"></i> 
+            <span class="menu-text">Playlists</span>
+        </a>
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-clock"></i>
+            <span class="menu-text">Watch Later</span>
+        </a>
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-thumbs-up"></i>
+            <span class="menu-text">Liked Videos</span>
+        </a>
+        <hr class="line">
+
+        <p class="text-side">Explore</p>
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-fire icon"></i>
+            <span class="menu-text">Trending</span>
+        </a>
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-shopping-bag icon"></i>
+            <span class="menu-text">Shopping</span>
+        </a>
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-music icon"></i>
+            <span class="menu-text">Music</span>
+        </a>   
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-broadcast-tower icon"></i>
+            <span class="menu-text">Live</span>
+        </a>
+        <a href="#" class="menu-item m-hide">
+            <i class="fas fa-gamepad icon"></i>
+            <span class="menu-text">Gaming</span>
+        </a>
+        
+        
+    </div>
+
+    <div class="content">
+        <div class="filters">
+            <button class="filter-button all">All</button>
+            <button class="filter-button">Music</button>
+            <button class="filter-button">Sports</button>
+            <button class="filter-button">Gaming</button>
+            <button class="filter-button">News</button>
+            <button class="filter-button">Education</button>
+            <button class="filter-button">Comedy</button>
+            <button class="filter-button">Vlogs</button>
+            <button class="filter-button">Travel</button>
+            <button class="filter-button">Technology</button>
+            <button class="filter-button">Fashion</button>
+            <button class="filter-button">Food</button>
+            <button class="filter-button">Health</button>
+            <button class="filter-button">Science</button>
+      
+        </div>
+
+        <div class="video-grid">
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/BzYMFd-lQL4?si=jSHm66fbYSpC57Cl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video1.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">Learn HTML for Beginners - W3Schools.com</h4>
+                        <p class="video-channel">w3schools.com</p>
+                        <p class="video-views">143K views • 4 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/cu_ykIfBprI?si=RTo8_4Kev7vMwp11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video2.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">How Install Visual Studio Code on Windows 11 (VS Code) (2024)</h4>
+                        <p class="video-channel">ProgrammingKnowledge</p>
+                        <p class="video-views">246K views • 7 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/AABmCvjd_iU?si=gcPd0jisI3ypRaSv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video3.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">How To Build A Website with Wordpress (Full Tutorial)</h4>
+                        <p class="video-channel">Charlie Chang</p>
+                        <p class="video-views">1M views • 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe  width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/cLOT0APQzDs?si=r5SkGW1uEQxZi4ne" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video4.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">Create A Responsive E-Commerce Flower Shop Website Design Using Pure HTML & CSS Only</h4>
+                        <p class="video-channel">Mr. Web Designer</p>
+                        <p class="video-views">920K views • 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/LO5eTH4Pe8E?si=8OoiiA5Ed8pN0yJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video5.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">JavaScript In 10 Minutes | JavaScript Tutorial For Beginners | Learn JavaScript | Simplilearn</h4>
+                        <p class="video-channel">Simplilearn</p>
+                        <p class="video-views">95K views • 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/XASY30EfGAc?si=QNcV7-jb1OrFa_P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video6.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">What is a Programming Language in 60 seconds!</h4>
+                        <p class="video-channel">Women Techmakers</p>
+                        <p class="video-views">68K views • 5 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/TG5Ongpo5b4?si=uWaFmW8-3kiDaBXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video7.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">Java vs .Net | Difference between Java and .Net - Which one is Better? | Intellipaat</h4>
+                        <p class="video-channel">Intellipaat</p>
+                        <p class="video-views">202K views • 4 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/Y8Tko2YC5hA?si=3xKmEOcqRLlpQcm_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video8.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">What is Python? Why Python is So Popular?</h4>
+                        <p class="video-channel">Programming with Mosh</p>
+                        <p class="video-views">2M views • 6 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/pBy1zgt0XPc?si=BVBJnutNYLZAez6B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video9.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">What is GitHub?</h4>
+                        <p class="video-channel">GitHub</p>
+                        <p class="video-views">1.8M views • 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/wgRwITQHszU?si=bems4h5wkyUVWroV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video10.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">Installing MySQL and Creating Databases | MySQL for Beginners</h4>
+                        <p class="video-channel">Alex The Analyst</p>
+                        <p class="video-views">585K views • 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/wHL9xixdCBk?si=WL_V-uguzymgi3CT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video11.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">What is Slack? | The End of Emails</h4>
+                        <p class="video-channel">How It Happened</p>
+                        <p class="video-views">38K views • 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <iframe width="560" height="315" class="thumbnail" src="https://www.youtube.com/embed/Vayo2RSwcRY?si=mWm50K2bulknVx-f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <img src="./images/video12.jpg" alt="Channel Icon" class="channel-icon">
+                    <div class="video-details">
+                        <h4 class="video-title">How to Use ChatGPT - Beginner's Guide</h4>
+                        <p class="video-channel">Howfinity</p>
+                        <p class="video-views">120K views • 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
